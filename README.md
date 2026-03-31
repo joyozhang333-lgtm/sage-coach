@@ -344,11 +344,279 @@ If Sage Coach helped you, give it a ⭐️ so more people can find it.
 
 > **世界上最好的智慧，被锁在了最贵的房间里。**
 
+一个好的心理咨询师，500-2000 元/小时。一个好的职业教练，一次 session 上千。一个好的创业导师，要么在 YC，要么在你够不到的圈子里。一个好的灵性老师？你可能要去印度、泰国、日本的禅寺住上几个月。
+
+而那些真正需要这些智慧的人 — 凌晨三点失眠的创业者、刚被裁员不知道何去何从的中年人、在人生意义中迷失的年轻人、想要认识自己内心的修行者 — 他们往往是最没有资源去获取这些帮助的人。
+
 **Sage Coach**，就是为了改变这件事。
 
-4 盏灯，4 个维度，每一盏融合了 6-10 位世界级导师的方法论。同时支持 Claude Code 和 OpenClaw（小龙虾 🦞），也兼容 Cursor、Copilot 等所有主流 AI 工具。
+4 盏灯，4 个维度，每一盏融合了 6-10 位世界级导师的方法论。不是拼凑语录，是完整的认知架构。不是聊天机器人，是真正的引导系统。
 
 **这盏灯，给所有在黑暗中找路的人。**
+
+---
+
+## 🪔 四盏灯
+
+### 🧘 `/spiritual` — 灵性上师
+
+**"认识你自己。"**
+
+融合三大佛法传承 — 南传的朴素直接、大乘的慈悲广大、密乘的直指心性。
+
+| 导师 | 传承 | 核心智慧 |
+|------|------|---------|
+| 阿姜查 | 🇹🇭 泰国森林 | "你执着快乐，快乐就变成了苦" |
+| 一行禅师 | 🇻🇳 正念 | "此刻是美好的时刻" |
+| 铃木俊隆 | 🇯🇵 曹洞禅 | "初学者的心中有无限可能" |
+| 圣严法师 | 🇹🇼 禅宗 | "面对它、接受它、处理它、放下它" |
+| 明就仁波切 | 🇹🇧 大手印 | "觉知本身就是禅修" |
+| 创巴仁波切 | 🇹🇧 香巴拉 | 撕碎灵性物质主义 |
+| 佩玛·丘卓 | 🇹🇧 藏传 | "你是天空，其他一切只是天气" |
+| 宗萨仁波切 | 🇹🇧 利美 | "佛法不是宗教，是真理的科学" |
+
+**五阶段修行引导**：散乱心 → 安宁心 → 专注心 → 菩提心 → 空性见
+
+> *适合：修行者、灵性探索者、想认识内心的人*
+
+---
+
+### 🫂 `/crisis` — 低谷陪伴
+
+**"在最黑的夜里，做你的那盏灯。"**
+
+不急于解决问题，先接住你。然后一步步陪你走出来。
+
+| 导师 | 领域 | 核心智慧 |
+|------|------|---------|
+| 弗兰克尔 | 意义疗法 | "人可以被剥夺一切，除了选择面对苦难的态度" |
+| 欧文·亚隆 | 存在主义 | 直面死亡、自由、孤独和无意义 |
+| 布琳·布朗 | 脆弱力 | "脆弱不是软弱，是勇气的起点" |
+| 佩玛·丘卓 | 藏传佛教 | "当一切崩塌时，你正站在觉醒的门口" |
+| 鲁米 | 苏菲诗人 | "伤口是光进入你内心的地方" |
+| 苏轼 | 东方智慧 | 被贬黄州，写出最深沉的词 |
+| 王阳明 | 心学 | 龙场悟道，绝境中顿悟 |
+
+**四阶段陪伴**：接住 → 稳住 → 看见 → 起步
+
+> *适合：正在经历人生低谷的人、失去方向的人、需要被听见的人*
+
+---
+
+### 🔄 `/career` — 职业转型
+
+**"职业不是选出来的，是在行动中长出来的。"**
+
+不给鸡汤，给框架。不替你选，帮你学会选。
+
+| 导师 | 方法论 | 核心智慧 |
+|------|--------|---------|
+| 伊巴拉 | INSEAD | "转型不是一个决定，而是一段旅程" |
+| 伯内特 & 伊万斯 | 斯坦福人生设计 | Design Your Life，原型测试 |
+| 古典 | 新精英生涯 | 三叶草模型（兴趣×能力×价值观）|
+| 德韦克 | 成长型思维 | "还不会"比"不会"多了时间维度 |
+| 戈德史密斯 | 高管教练 | What got you here won't get you there |
+| 帕尔默 | 生命教育 | 职业选择的深层是"我是谁" |
+
+**五步转型**：看清现在 → 探索可能 → 小步试验 → 做出选择 → 跨越执行
+
+覆盖：大厂倦怠、35 岁焦虑、AI 替代恐惧、兴趣与收入冲突
+
+> *适合：想转型但不知从何开始的人、职业迷茫期的人*
+
+---
+
+### 🚀 `/startup` — 创业导师
+
+**"创业是一场修行。产品是你内在世界的外在投射。"**
+
+不只帮你做产品，帮你成为能做好产品的人。
+
+| 导师 | 方法论 | 核心智慧 |
+|------|--------|---------|
+| Paul Graham | YC | "做不可扩展的事" |
+| Eric Ries | 精益创业 | 构建-测量-学习循环 |
+| Peter Thiel | 零到一 | "竞争是失败者的游戏" |
+| 张一鸣 | 字节 | 延迟满足感，始终创业 |
+| Ben Horowitz | a16z | "最难的事是管理自己的心理" |
+| Ray Dalio | 桥水 | 痛苦 + 反思 = 进步 |
+| 傅盛 | 猎豹 | 创业最大的壁垒是认知 |
+
+**四维引导**：产品力 → 认知力 → 执行力 → 心力
+
+覆盖：0-1 找方向、PMF 验证、增长瓶颈、Pivot 决策、AI 创业
+
+> *适合：创业者、独立开发者、产品经理*
+
+---
+
+## ⚡ 快速开始
+
+### 平台兼容性
+
+| 平台 | 安装方式 | 状态 |
+|------|---------|------|
+| **Claude Code** | 复制到 `.claude/commands/` | ✅ 原生支持 |
+| **OpenClaw 🦞** | 发布到 ClawHub / 复制到 skills 目录 | ✅ 原生支持 |
+| **Cursor** | 复制到 `.cursor/rules/` | ✅ 兼容 |
+| **GitHub Copilot** | 复制到 `.github/copilot-instructions.md` | ✅ 兼容 |
+| **Windsurf** | 复制到 `.windsurf/rules/` | ✅ 兼容 |
+| **Cline** | 复制到 `.cline/rules/` | ✅ 兼容 |
+| **Codex** | 复制到 `.agents/skills/` | ✅ 兼容 |
+| **Gemini CLI** | 复制到 `.gemini/skills/` | ✅ 兼容 |
+
+### Claude Code 安装
+
+```bash
+git clone https://github.com/joyozhang333-lgtm/sage-coach.git
+
+# 项目级（仅当前项目可用）
+mkdir -p .claude/commands
+cp sage-coach/skills/spiritual/SKILL.md .claude/commands/spiritual.md
+cp sage-coach/skills/crisis/SKILL.md .claude/commands/crisis.md
+cp sage-coach/skills/career/SKILL.md .claude/commands/career.md
+cp sage-coach/skills/startup/SKILL.md .claude/commands/startup.md
+
+# 或全局安装（所有项目可用）
+mkdir -p ~/.claude/commands
+for f in spiritual crisis career startup; do
+  cp sage-coach/skills/$f/SKILL.md ~/.claude/commands/$f.md
+done
+```
+
+然后在 Claude Code 中输入：
+```
+/spiritual    🧘 开始灵性修行对话
+/crisis       🫂 在低谷时刻获得陪伴
+/career       🔄 探索职业转型
+/startup      🚀 分析创业问题
+```
+
+### OpenClaw 小龙虾 🦞 安装
+
+**方式一：从 ClawHub 安装（推荐）**
+
+```bash
+openclaw skills install sage-spiritual
+openclaw skills install sage-crisis
+openclaw skills install sage-career
+openclaw skills install sage-startup
+```
+
+**方式二：手动安装**
+
+```bash
+git clone https://github.com/joyozhang333-lgtm/sage-coach.git
+
+cp -r sage-coach/skills/spiritual ~/.openclaw/skills/sage-spiritual
+cp -r sage-coach/skills/crisis ~/.openclaw/skills/sage-crisis
+cp -r sage-coach/skills/career ~/.openclaw/skills/sage-career
+cp -r sage-coach/skills/startup ~/.openclaw/skills/sage-startup
+```
+
+然后和你的 🦞 对话：
+```
+@sage-spiritual    🧘 灵性修行引导
+@sage-crisis       🫂 低谷时刻陪伴
+@sage-career       🔄 职业转型规划
+@sage-startup      🚀 创业问题分析
+```
+
+### Cursor / Copilot / 其他工具安装
+
+每个 SKILL.md 都可以作为 system prompt 或规则文件用在任何 AI 工具中：
+
+```bash
+# Cursor
+cp sage-coach/skills/spiritual/SKILL.md .cursor/rules/spiritual.md
+
+# Copilot — 追加到指令文件
+cat sage-coach/skills/crisis/SKILL.md >> .github/copilot-instructions.md
+
+# Windsurf
+cp sage-coach/skills/career/SKILL.md .windsurf/rules/career.md
+
+# Codex / Gemini CLI
+cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
+```
+
+---
+
+## 🧠 为什么是 Skill 而不是 App？
+
+| | 传统 AI App | Sage Coach Skill |
+|---|---|---|
+| **部署** | 服务器 + 域名 + 运维 | 一个 `.md` 文件 |
+| **成本** | 月费 / 按次收费 | 永久免费 |
+| **隐私** | 数据过第三方服务器 | 对话 100% 本地 |
+| **定制** | 不可改 | Fork 即改，加导师加场景 |
+| **能力** | 受限于 wrapper 设计 | LLM 完整能力 |
+| **文件大小** | 动辄几十 MB | 每个 3-5 KB |
+| **平台** | 只能用一个 | Claude Code、OpenClaw、Cursor、Copilot 等全兼容 |
+
+**核心洞察**：Skill 不是调 API，是**认知注入** — 给世界级 AI 注入专业思维框架。比任何 wrapper 都强大。而且你的对话永远不过第三方服务器。
+
+---
+
+## 🏗 设计哲学
+
+**1. 不是聊天机器人，是引导系统。**
+每个 Coach 有完整的阶段模型。它不等你问，它用好问题引导你思考。
+
+**2. 融合，不是拼凑。**
+6-10 位导师的方法论不是简单罗列，是融合成一个连贯的引导体系。
+
+**3. 因人而异。**
+根据你的状态和阶段动态调整。灵性 Coach 不对初学者讲空性，低谷 Coach 不在你崩溃时讲大道理。
+
+**4. 有边界。**
+每个 Coach 都有安全机制 — 危机转介、专业建议界限、AI 身份透明。
+
+**5. 中西融合。**
+融合东方智慧（佛法、心学、禅宗）和西方方法论（存在主义、设计思维、精益创业）。为中文用户深度优化，同时天然支持英文对话。
+
+**6. 全平台兼容。**
+基于 SKILL.md 标准格式 — Claude Code 和 OpenClaw 原生支持，兼容所有主流 AI 编程工具。
+
+---
+
+## 🤝 参与贡献
+
+Sage Coach 是一个开放的项目。欢迎：
+
+- **添加导师原型** — 你最受启发的老师是谁？加进来
+- **新增 Coach 方向** — 亲密关系？育儿？健康？创作？
+- **多语言翻译** — 日文、韩文、西班牙文...
+- **改进引导框架** — 让每个阶段更精准
+- **发布到 ClawHub** — 帮助 OpenClaw 用户发现 Sage Coach
+- **分享使用故事** — 你的体验就是最好的贡献
+
+提交 Issue 或 Pull Request 即可。
+
+---
+
+## 📚 文档
+
+- **[技术文档 & 极客指南](docs/geek.md)** — 架构设计、扩展方法、创建你自己的 Coach
+- **[宣传素材](docs/promo.md)** — 极客文、小红书文、英文推广素材
+
+---
+
+## 这不是什么 vs 这是什么
+
+| 这不是 | 这是 |
+|--------|------|
+| ❌ 心理治疗替代品 | ✅ 凌晨三点需要有人听你说话时的陪伴 |
+| ❌ 宗教传教工具 | ✅ 想认识内心时的入门引导 |
+| ❌ 职业中介 | ✅ 迷茫时帮你理清思路的框架 |
+| ❌ 投资建议 | ✅ 创业路上帮你看清盲区的镜子 |
+| ❌ 万能 AI | ✅ 把世界级智慧民主化的一次尝试 |
+
+---
+
+如果 Sage Coach 帮到了你，给个 ⭐️ 让更多人看到。
+
+**智慧不应该有门槛。这盏灯，给所有在黑暗中找路的人。**
 
 ---
 
