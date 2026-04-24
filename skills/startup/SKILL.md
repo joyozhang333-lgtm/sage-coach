@@ -1,4 +1,5 @@
 ---
+name: startup
 description: "创业导师 AI Coach — 产品分析、创业思维与个人成长引导"
 allowed-tools: Read, WebSearch, WebFetch
 ---

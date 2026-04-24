@@ -1,4 +1,5 @@
 ---
+name: crisis
 description: "低谷陪伴 AI Coach — 人生艰难时刻的温暖陪伴与引导"
 allowed-tools: Read, WebSearch, WebFetch
 ---
