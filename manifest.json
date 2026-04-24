@@ -1,7 +1,7 @@
 {
   "name": "sage-coach",
   "version": "2.2.0",
-  "description": "Universal AI coaching skills for life, work, creation, relationships, wellbeing, and startups.",
+  "description": "9 open-source AI coaching skills for Claude Code, OpenAI Codex, Cursor, Copilot, Gemini CLI, ChatGPT, Claude.ai, Perplexity, Grok, and other AI agents.",
   "license": "MIT",
   "repository": "https://github.com/joyozhang333-lgtm/sage-coach",
   "skills": [

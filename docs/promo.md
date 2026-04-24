@@ -12,7 +12,9 @@
 
 ### Short Pitch
 
-I built Sage Coach v2: an open-source set of portable AI coaching skills that turn mainstream AI products into a serious guidance system.
+I built Sage Coach v2: an open-source AI coaching skill library for Claude Code, OpenAI Codex, Cursor, GitHub Copilot, Windsurf, Cline, Gemini CLI, ChatGPT, Claude.ai, Gemini Gems, Perplexity, Grok, and other AI agents.
+
+In SEO terms: AI life coach, AI career coach, AI startup mentor, AI relationship coach, AI creativity coach, AI wellbeing coach, Claude Code skills, Codex skills, Cursor rules, Copilot prompt files, Gemini CLI prompts, ChatGPT system prompts, and open-source prompt engineering.
 
 It is not a ChatGPT wrapper. There is no server, no subscription, no user-data pipeline.
 

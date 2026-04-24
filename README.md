@@ -1,9 +1,15 @@
+# Sage Coach — Universal AI Coaching Skills
+
+**9 open-source AI coaching skills for Claude Code, OpenAI Codex, Cursor, GitHub Copilot, Windsurf, Cline, Gemini CLI, ChatGPT, Claude.ai, Gemini Gems, Perplexity, Grok, and other AI agents.**
+
+**Sage Coach 是一个开源 AI 人生教练技能库**：把灵性修行、低谷陪伴、职业转型、创业导师、亲密关系、身心节律、创作表达和智慧人物蒸馏做成可迁移的 `SKILL.md`，可安装到 Claude Code / Codex / Cursor / Copilot / Gemini CLI，也可导出为 ChatGPT、Claude.ai、Gemini Gems、Perplexity、Grok 可用的系统 Prompt。
+
 <p align="center">
-  <img src="https://img.shields.io/badge/🪔_Sage_Coach-World--Class_Wisdom_in_Your_Terminal-orange?style=for-the-badge&labelColor=1a1a2e" alt="Sage Coach">
+  <img src="https://img.shields.io/badge/🪔_Sage_Coach-Universal_AI_Coaching_Skills-orange?style=for-the-badge&labelColor=1a1a2e" alt="Sage Coach — Universal AI Coaching Skills">
   <br><br>
-  <strong>World-class coaches in your terminal. Free forever.</strong>
+  <strong>Portable AI life coaches. No server. No subscription. Free forever.</strong>
   <br>
-  <sub>把世界上最好的教练装进你的终端。免费。开源。永远。</sub>
+  <sub>把世界级智慧做成可迁移的 AI Coach Skill。免费。开源。永远。</sub>
 </p>
 
 <p align="center">
@@ -26,7 +32,29 @@
 
 ---
 
-[English](#the-story) | [简体中文](#故事)
+[English](#what-is-sage-coach) | [简体中文](#sage-coach-是什么) | [Quick Start](#-quick-start)
+
+---
+
+## What Is Sage Coach?
+
+Sage Coach is a **universal AI coaching skill library**. It gives your AI assistant reusable coaching capabilities through plain Markdown skill files: no SaaS app, no backend, no account system, no vendor lock-in.
+
+It is designed for people searching for:
+
+- AI life coach, AI career coach, AI startup mentor, AI relationship coach, AI creativity coach, AI wellbeing coach
+- Claude Code skills, OpenAI Codex skills, Cursor rules, GitHub Copilot prompts, Gemini CLI prompts
+- ChatGPT system prompts, Claude project instructions, Gemini Gem instructions, Perplexity Spaces prompts
+- open-source prompt engineering, AI agent skills, self-improvement tools, crisis companion prompts, wisdom distillation
+
+The repo includes a universal installer/exporter:
+
+```bash
+./bin/sage-coach install claude-code --global all
+./bin/sage-coach install codex --global all
+./bin/sage-coach install cursor --target /path/to/repo all
+./bin/sage-coach export all dist
+```
 
 ---
 
@@ -406,6 +434,28 @@ If Sage Coach helped you, give it a ⭐️ so more people can find it.
 ---
 
 <br>
+
+## Sage Coach 是什么
+
+Sage Coach 是一个**跨平台 AI Coach Skill 开源库**。它不是一个新的聊天 App，而是一组可以被主流 AI 产品直接加载的 Markdown 指令包，让 Claude Code、OpenAI Codex、Cursor、GitHub Copilot、Windsurf、Cline、Gemini CLI、ChatGPT、Claude.ai、Gemini Gems、Perplexity 和 Grok 获得可复用的人生教练能力。
+
+适合搜索这些关键词的人：
+
+- AI 人生教练、AI 职业教练、AI 创业导师、AI 亲密关系教练、AI 创作教练、AI 身心节律教练
+- Claude Code Skills、OpenAI Codex Skills、Cursor Rules、GitHub Copilot Prompts、Gemini CLI Prompts
+- ChatGPT 系统提示词、Claude 项目指令、Gemini Gem 指令、Perplexity Spaces Prompt
+- 开源 Prompt Engineering、AI Agent Skills、自我成长工具、低谷陪伴 Prompt、智慧人物蒸馏
+
+一条命令即可安装或导出：
+
+```bash
+./bin/sage-coach install claude-code --global all
+./bin/sage-coach install codex --global all
+./bin/sage-coach install cursor --target /path/to/repo all
+./bin/sage-coach export all dist
+```
+
+---
 
 ## 故事
 
