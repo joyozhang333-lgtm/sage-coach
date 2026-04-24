@@ -1,0 +1,334 @@
+#!/usr/bin/env sh
+set -eu
+
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+SKILLS_DIR="$ROOT/skills"
+VERSION="2.2.0"
+
+usage() {
+  cat <<'EOF'
+Sage Coach universal installer
+
+Usage:
+  bin/sage-coach list
+  bin/sage-coach doctor
+  bin/sage-coach install <platform> [--project|--global] [--target DIR] [skill...]
+  bin/sage-coach export <platform|all> <out-dir> [skill...]
+
+Platforms:
+  claude-code   Claude Code native skills
+  codex         OpenAI Codex skills
+  openclaw      OpenClaw skill folders
+  cursor        Cursor project rules (.mdc)
+  windsurf      Windsurf workspace rules
+  cline         Cline workspace rules
+  copilot       GitHub Copilot prompt files
+  gemini-cli    GEMINI.md imports + skill prompt files
+  chatgpt       Export copy-paste system prompts
+  claude-ai     Export Claude.ai project instructions
+  gemini-app    Export Gemini Gem instructions
+  perplexity    Export Perplexity Space instructions
+  grok          Export Grok project instructions
+
+Examples:
+  bin/sage-coach install claude-code --global all
+  bin/sage-coach install cursor --target /path/to/repo sage crisis
+  bin/sage-coach export all dist
+EOF
+}
+
+die() {
+  printf 'sage-coach: %s\n' "$*" >&2
+  exit 1
+}
+
+home_path() {
+  case "$1" in
+    "~"/*) printf '%s/%s\n' "$HOME" "${1#~/}" ;;
+    *) printf '%s\n' "$1" ;;
+  esac
+}
+
+list_skills() {
+  for d in "$SKILLS_DIR"/*; do
+    [ -f "$d/SKILL.md" ] || continue
+    basename "$d"
+  done | sort
+}
+
+validate_skill() {
+  [ -f "$SKILLS_DIR/$1/SKILL.md" ] || die "unknown skill '$1'. Run: bin/sage-coach list"
+}
+
+resolve_skills() {
+  if [ "$#" -eq 0 ]; then
+    list_skills
+    return
+  fi
+
+  for skill in "$@"; do
+    if [ "$skill" = "all" ]; then
+      list_skills
+    else
+      validate_skill "$skill"
+      printf '%s\n' "$skill"
+    fi
+  done | awk '!seen[$0]++'
+}
+
+strip_frontmatter() {
+  awk '
+    NR == 1 && $0 == "---" { skip = 1; next }
+    skip && $0 == "---" { skip = 0; next }
+    !skip { print }
+  ' "$1"
+}
+
+skill_description() {
+  awk -F'"' '/^description:/ { print $2; exit }' "$SKILLS_DIR/$1/SKILL.md"
+}
+
+copy_skill_dir() {
+  src="$SKILLS_DIR/$1"
+  dst="$2"
+  mkdir -p "$dst"
+  cp "$src/SKILL.md" "$dst/SKILL.md"
+  printf 'installed %-13s -> %s\n' "$1" "$dst/SKILL.md"
+}
+
+write_plain_prompt() {
+  skill="$1"
+  file="$2"
+  title="$3"
+  mkdir -p "$(dirname "$file")"
+  {
+    printf '# Sage Coach: %s\n\n' "$title"
+    printf 'Use this as system instructions, project instructions, or the first message in an AI product that supports reusable prompts.\n\n'
+    strip_frontmatter "$SKILLS_DIR/$skill/SKILL.md"
+  } > "$file"
+  printf 'exported %-13s -> %s\n' "$skill" "$file"
+}
+
+write_cursor_rule() {
+  skill="$1"
+  file="$2"
+  desc=$(skill_description "$skill")
+  mkdir -p "$(dirname "$file")"
+  {
+    printf -- '---\n'
+    printf 'description: "%s"\n' "$desc"
+    printf 'alwaysApply: false\n'
+    printf -- '---\n\n'
+    strip_frontmatter "$SKILLS_DIR/$skill/SKILL.md"
+  } > "$file"
+  printf 'installed %-13s -> %s\n' "$skill" "$file"
+}
+
+write_rule_file() {
+  skill="$1"
+  file="$2"
+  mkdir -p "$(dirname "$file")"
+  strip_frontmatter "$SKILLS_DIR/$skill/SKILL.md" > "$file"
+  printf 'installed %-13s -> %s\n' "$skill" "$file"
+}
+
+write_copilot_prompt() {
+  skill="$1"
+  file="$2"
+  mkdir -p "$(dirname "$file")"
+  {
+    printf -- '---\n'
+    printf "agent: 'agent'\n"
+    printf "description: 'Use Sage Coach %s mode'\n" "$skill"
+    printf -- '---\n\n'
+    printf 'When the user explicitly asks for Sage Coach `%s`, apply these instructions.\n\n' "$skill"
+    strip_frontmatter "$SKILLS_DIR/$skill/SKILL.md"
+  } > "$file"
+  printf 'installed %-13s -> %s\n' "$skill" "$file"
+}
+
+replace_sage_block() {
+  file="$1"
+  block="$2"
+  mkdir -p "$(dirname "$file")"
+  tmp="${file}.tmp.$$"
+  if [ -f "$file" ]; then
+    awk '
+      /^<!-- SAGE-COACH:BEGIN -->$/ { skip = 1; next }
+      /^<!-- SAGE-COACH:END -->$/ { skip = 0; next }
+      !skip { print }
+    ' "$file" > "$tmp"
+  else
+    : > "$tmp"
+  fi
+  {
+    cat "$tmp"
+    printf '\n<!-- SAGE-COACH:BEGIN -->\n'
+    printf '%s\n' "$block"
+    printf '<!-- SAGE-COACH:END -->\n'
+  } > "$file"
+  rm -f "$tmp"
+}
+
+install_gemini_cli() {
+  scope="$1"
+  target="$2"
+  shift 2
+  case "$scope" in
+    global)
+      base=$(home_path "${target:-~/.gemini}")
+      memory="$base/GEMINI.md"
+      skill_dir="$base/sage-coach"
+      import_prefix="@./sage-coach"
+      ;;
+    project)
+      base="${target:-$PWD}"
+      memory="$base/GEMINI.md"
+      skill_dir="$base/.gemini/sage-coach"
+      import_prefix="@./.gemini/sage-coach"
+      ;;
+    *) die "unknown scope '$scope'" ;;
+  esac
+
+  mkdir -p "$skill_dir"
+  imports=""
+  for skill in $(resolve_skills "$@"); do
+    write_plain_prompt "$skill" "$skill_dir/$skill.md" "$skill"
+    imports="${imports}${import_prefix}/${skill}.md
+"
+  done
+  replace_sage_block "$memory" "$imports"
+  printf 'updated GEMINI imports -> %s\n' "$memory"
+}
+
+install_platform() {
+  platform="$1"
+  scope="$2"
+  target="$3"
+  shift 3
+
+  [ "$platform" = "gemini-cli" ] && {
+    install_gemini_cli "$scope" "$target" "$@"
+    return
+  }
+
+  for skill in $(resolve_skills "$@"); do
+    case "$platform:$scope" in
+      claude-code:global) copy_skill_dir "$skill" "$(home_path "~/.claude/skills/$skill")" ;;
+      claude-code:project) copy_skill_dir "$skill" "${target:-$PWD}/.claude/skills/$skill" ;;
+      codex:global) copy_skill_dir "$skill" "$(home_path "~/.agents/skills/$skill")" ;;
+      codex:project) copy_skill_dir "$skill" "${target:-$PWD}/.agents/skills/$skill" ;;
+      openclaw:global) copy_skill_dir "$skill" "$(home_path "~/.openclaw/skills/sage-$skill")" ;;
+      openclaw:project) copy_skill_dir "$skill" "${target:-$PWD}/skills/sage-$skill" ;;
+      cursor:project) write_cursor_rule "$skill" "${target:-$PWD}/.cursor/rules/sage-$skill.mdc" ;;
+      windsurf:project) write_rule_file "$skill" "${target:-$PWD}/.windsurf/rules/sage-$skill.md" ;;
+      cline:project) write_rule_file "$skill" "${target:-$PWD}/.clinerules/sage-$skill.md" ;;
+      copilot:project) write_copilot_prompt "$skill" "${target:-$PWD}/.github/prompts/sage-$skill.prompt.md" ;;
+      cursor:global|windsurf:global|cline:global|copilot:global)
+        die "$platform uses project/workspace files here. Use --project or --target DIR."
+        ;;
+      chatgpt:*|claude-ai:*|gemini-app:*|perplexity:*|grok:*)
+        die "$platform is export-only. Use: bin/sage-coach export $platform <out-dir>"
+        ;;
+      *) die "unsupported platform/scope: $platform $scope" ;;
+    esac
+  done
+}
+
+export_platform() {
+  platform="$1"
+  out="$2"
+  shift 2
+
+  if [ "$platform" = "all" ]; then
+    base_out="$out"
+    for p in claude-code codex openclaw cursor windsurf cline copilot gemini-cli chatgpt claude-ai gemini-app perplexity grok; do
+      ( export_platform "$p" "$base_out/$p" "$@" )
+    done
+    return
+  fi
+
+  for skill in $(resolve_skills "$@"); do
+    case "$platform" in
+      claude-code|codex|openclaw)
+        copy_skill_dir "$skill" "$out/$skill"
+        ;;
+      cursor)
+        write_cursor_rule "$skill" "$out/sage-$skill.mdc"
+        ;;
+      windsurf|cline)
+        write_rule_file "$skill" "$out/sage-$skill.md"
+        ;;
+      copilot)
+        write_copilot_prompt "$skill" "$out/sage-$skill.prompt.md"
+        ;;
+      gemini-cli|chatgpt|claude-ai|gemini-app|perplexity|grok)
+        write_plain_prompt "$skill" "$out/$skill.md" "$skill"
+        ;;
+      *) die "unsupported export platform '$platform'" ;;
+    esac
+  done
+}
+
+doctor() {
+  ok=1
+  [ -f "$ROOT/manifest.json" ] || { printf 'missing manifest.json\n' >&2; ok=0; }
+  for skill in $(list_skills); do
+    file="$SKILLS_DIR/$skill/SKILL.md"
+    grep -q '^---$' "$file" || { printf 'missing frontmatter: %s\n' "$file" >&2; ok=0; }
+    grep -q '^name:' "$file" || { printf 'missing name: %s\n' "$file" >&2; ok=0; }
+    grep -q '^description:' "$file" || { printf 'missing description: %s\n' "$file" >&2; ok=0; }
+  done
+  [ "$ok" -eq 1 ] || exit 1
+  printf 'Sage Coach %s OK. %s skills found.\n' "$VERSION" "$(list_skills | wc -l | tr -d ' ')"
+}
+
+cmd="${1:-}"
+[ -n "$cmd" ] || { usage; exit 0; }
+shift || true
+
+case "$cmd" in
+  list)
+    list_skills
+    ;;
+  doctor)
+    doctor
+    ;;
+  install)
+    [ "$#" -ge 1 ] || die "install requires a platform"
+    platform="$1"
+    shift
+    scope="project"
+    target=""
+    skills=""
+    while [ "$#" -gt 0 ]; do
+      case "$1" in
+        --project) scope="project"; shift ;;
+        --global) scope="global"; shift ;;
+        --target)
+          [ "$#" -ge 2 ] || die "--target requires a directory"
+          target="$2"
+          shift 2
+          ;;
+        *) skills="${skills}${1}
+"; shift ;;
+      esac
+    done
+    # shellcheck disable=SC2086
+    install_platform "$platform" "$scope" "$target" $skills
+    ;;
+  export)
+    [ "$#" -ge 2 ] || die "export requires <platform|all> <out-dir>"
+    platform="$1"
+    out="$2"
+    shift 2
+    # shellcheck disable=SC2086
+    export_platform "$platform" "$out" "$@"
+    ;;
+  -h|--help|help)
+    usage
+    ;;
+  *)
+    die "unknown command '$cmd'"
+    ;;
+esac

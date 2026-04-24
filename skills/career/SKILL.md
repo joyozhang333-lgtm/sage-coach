@@ -1,4 +1,5 @@
 ---
+name: career
 description: "职业转型 AI Coach — 职业发展规划与转型引导"
 allowed-tools: Read, WebSearch, WebFetch
 ---

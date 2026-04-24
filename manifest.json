@@ -1,0 +1,160 @@
+{
+  "name": "sage-coach",
+  "version": "2.2.0",
+  "description": "9 open-source AI coaching skills for Claude Code, OpenAI Codex, Cursor, Copilot, Gemini CLI, ChatGPT, Claude.ai, Perplexity, Grok, and other AI agents.",
+  "license": "MIT",
+  "repository": "https://github.com/joyozhang333-lgtm/sage-coach",
+  "skills": [
+    {
+      "id": "sage",
+      "title": "Sage Router",
+      "emoji": "🪔",
+      "path": "skills/sage/SKILL.md",
+      "category": "router",
+      "summary": "Routes a conversation to the right Sage Coach and blends multiple coaches when needed."
+    },
+    {
+      "id": "spiritual",
+      "title": "Spiritual Guide",
+      "emoji": "🧘",
+      "path": "skills/spiritual/SKILL.md",
+      "category": "inner-work",
+      "summary": "Buddhist practice guidance across Theravada, Mahayana, Zen, and Vajrayana."
+    },
+    {
+      "id": "crisis",
+      "title": "Crisis Companion",
+      "emoji": "🫂",
+      "path": "skills/crisis/SKILL.md",
+      "category": "support",
+      "summary": "Warm companionship and grounding for hard moments, with clear safety boundaries."
+    },
+    {
+      "id": "career",
+      "title": "Career Transition Coach",
+      "emoji": "🔄",
+      "path": "skills/career/SKILL.md",
+      "category": "work",
+      "summary": "Career transition, identity exploration, prototyping, and 90-day action planning."
+    },
+    {
+      "id": "startup",
+      "title": "Startup Mentor",
+      "emoji": "🚀",
+      "path": "skills/startup/SKILL.md",
+      "category": "work",
+      "summary": "Product, cognition, execution, and founder psychology coaching."
+    },
+    {
+      "id": "relationship",
+      "title": "Relationship Coach",
+      "emoji": "🫶",
+      "path": "skills/relationship/SKILL.md",
+      "category": "relationships",
+      "summary": "Intimacy, conflict, boundaries, communication, attachment, and repair."
+    },
+    {
+      "id": "wellbeing",
+      "title": "Wellbeing Coach",
+      "emoji": "🌿",
+      "path": "skills/wellbeing/SKILL.md",
+      "category": "wellbeing",
+      "summary": "Sleep, energy, stress, habits, nervous-system regulation, and daily rhythm."
+    },
+    {
+      "id": "creativity",
+      "title": "Creativity Coach",
+      "emoji": "✍️",
+      "path": "skills/creativity/SKILL.md",
+      "category": "creation",
+      "summary": "Creative blocks, writing, personal voice, publishing cadence, and creative identity."
+    },
+    {
+      "id": "wisdom",
+      "title": "Wisdom Distillation Coach",
+      "emoji": "🧭",
+      "path": "skills/wisdom/SKILL.md",
+      "category": "wisdom",
+      "summary": "Distills ancient, modern, international, and domain-specific wise figures into practical lenses for present-life situations."
+    }
+  ],
+  "platforms": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "mode": "native-skill",
+      "projectPath": ".claude/skills/<skill>/SKILL.md",
+      "globalPath": "~/.claude/skills/<skill>/SKILL.md"
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "mode": "native-skill",
+      "projectPath": ".agents/skills/<skill>/SKILL.md",
+      "globalPath": "~/.agents/skills/<skill>/SKILL.md"
+    },
+    {
+      "id": "openclaw",
+      "name": "OpenClaw",
+      "mode": "native-skill",
+      "projectPath": "skills/sage-<skill>/SKILL.md",
+      "globalPath": "~/.openclaw/skills/sage-<skill>/SKILL.md"
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "mode": "rule",
+      "projectPath": ".cursor/rules/sage-<skill>.mdc"
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "mode": "rule",
+      "projectPath": ".windsurf/rules/sage-<skill>.md"
+    },
+    {
+      "id": "cline",
+      "name": "Cline",
+      "mode": "rule",
+      "projectPath": ".clinerules/sage-<skill>.md"
+    },
+    {
+      "id": "copilot",
+      "name": "GitHub Copilot",
+      "mode": "prompt-file",
+      "projectPath": ".github/prompts/sage-<skill>.prompt.md"
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "mode": "context-import",
+      "projectPath": ".gemini/sage-coach/<skill>.md + GEMINI.md imports",
+      "globalPath": "~/.gemini/sage-coach/<skill>.md + ~/.gemini/GEMINI.md imports"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT / GPTs",
+      "mode": "exported-system-prompt"
+    },
+    {
+      "id": "claude-ai",
+      "name": "Claude.ai Projects",
+      "mode": "exported-project-instruction"
+    },
+    {
+      "id": "gemini-app",
+      "name": "Gemini App / Gems",
+      "mode": "exported-gem-instruction"
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity Spaces",
+      "mode": "exported-space-instruction"
+    },
+    {
+      "id": "grok",
+      "name": "Grok Projects",
+      "mode": "exported-system-prompt"
+    }
+  ]
+}

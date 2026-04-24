@@ -1,29 +1,60 @@
+# Sage Coach — Universal AI Coaching Skills
+
+**9 open-source AI coaching skills for Claude Code, OpenAI Codex, Cursor, GitHub Copilot, Windsurf, Cline, Gemini CLI, ChatGPT, Claude.ai, Gemini Gems, Perplexity, Grok, and other AI agents.**
+
+**Sage Coach 是一个开源 AI 人生教练技能库**：把灵性修行、低谷陪伴、职业转型、创业导师、亲密关系、身心节律、创作表达和智慧人物蒸馏做成可迁移的 `SKILL.md`，可安装到 Claude Code / Codex / Cursor / Copilot / Gemini CLI，也可导出为 ChatGPT、Claude.ai、Gemini Gems、Perplexity、Grok 可用的系统 Prompt。
+
 <p align="center">
-  <img src="https://img.shields.io/badge/🪔_Sage_Coach-World--Class_Wisdom_in_Your_Terminal-orange?style=for-the-badge&labelColor=1a1a2e" alt="Sage Coach">
+  <img src="https://img.shields.io/badge/🪔_Sage_Coach-Universal_AI_Coaching_Skills-orange?style=for-the-badge&labelColor=1a1a2e" alt="Sage Coach — Universal AI Coaching Skills">
   <br><br>
-  <strong>World-class coaches in your terminal. Free forever.</strong>
+  <strong>Portable AI life coaches. No server. No subscription. Free forever.</strong>
   <br>
-  <sub>把世界上最好的教练装进你的终端。免费。开源。永远。</sub>
+  <sub>把世界级智慧做成可迁移的 AI Coach Skill。免费。开源。永远。</sub>
 </p>
 
 <p align="center">
   <a href="#-quick-start"><img src="https://img.shields.io/badge/⚡_Quick_Start-blue?style=flat-square" alt="Quick Start"></a>
-  <a href="#-the-four-sages"><img src="https://img.shields.io/badge/🪔_4_Coaches-orange?style=flat-square" alt="4 Coaches"></a>
+  <a href="#-the-sage-coach-suite"><img src="https://img.shields.io/badge/🪔_9_Skills-orange?style=flat-square" alt="9 Skills"></a>
   <a href="docs/geek.md"><img src="https://img.shields.io/badge/🔧_Tech_Docs-gray?style=flat-square" alt="Tech Docs"></a>
+  <a href="docs/platforms.md"><img src="https://img.shields.io/badge/🌐_Platform_Guide-black?style=flat-square" alt="Platform Guide"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="MIT License"></a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Claude_Code-supported-blueviolet?style=flat-square" alt="Claude Code">
+  <img src="https://img.shields.io/badge/Codex-supported-black?style=flat-square" alt="Codex">
   <img src="https://img.shields.io/badge/OpenClaw_🦞-supported-red?style=flat-square" alt="OpenClaw">
   <img src="https://img.shields.io/badge/Cursor-compatible-blue?style=flat-square" alt="Cursor">
   <img src="https://img.shields.io/badge/Copilot-compatible-blue?style=flat-square" alt="Copilot">
-  <img src="https://img.shields.io/badge/Codex-compatible-blue?style=flat-square" alt="Codex">
+  <img src="https://img.shields.io/badge/Gemini-compatible-green?style=flat-square" alt="Gemini">
+  <img src="https://img.shields.io/badge/ChatGPT-exportable-10a37f?style=flat-square" alt="ChatGPT">
 </p>
 
 ---
 
-[English](#the-story) | [简体中文](#故事)
+[English](#what-is-sage-coach) | [简体中文](#sage-coach-是什么) | [Quick Start](#-quick-start)
+
+---
+
+## What Is Sage Coach?
+
+Sage Coach is a **universal AI coaching skill library**. It gives your AI assistant reusable coaching capabilities through plain Markdown skill files: no SaaS app, no backend, no account system, no vendor lock-in.
+
+It is designed for people searching for:
+
+- AI life coach, AI career coach, AI startup mentor, AI relationship coach, AI creativity coach, AI wellbeing coach
+- Claude Code skills, OpenAI Codex skills, Cursor rules, GitHub Copilot prompts, Gemini CLI prompts
+- ChatGPT system prompts, Claude project instructions, Gemini Gem instructions, Perplexity Spaces prompts
+- open-source prompt engineering, AI agent skills, self-improvement tools, crisis companion prompts, wisdom distillation
+
+The repo includes a universal installer/exporter:
+
+```bash
+./bin/sage-coach install claude-code --global all
+./bin/sage-coach install codex --global all
+./bin/sage-coach install cursor --target /path/to/repo all
+./bin/sage-coach export all dist
+```
 
 ---
 
@@ -53,13 +84,32 @@ The people who need this wisdom most — the founder awake at 3 AM, the person w
 
 **Sage Coach changes that.**
 
-4 coaches. 4 dimensions of life. Each one weaves together the methodologies of 6-10 world-class mentors. Not a patchwork of quotes — a complete cognitive architecture. Not a chatbot — a real guidance system.
+9 skills. 8 dimensions of life, plus a `/sage` router that helps choose the right path. Each coach weaves together the methodologies of world-class mentors. Not a patchwork of quotes — a complete cognitive architecture. Not a chatbot — a real guidance system.
 
 **This light is for everyone finding their way in the dark.**
 
 ---
 
-## 🪔 The Four Sages
+## 🪔 The Sage Coach Suite
+
+### 🪔 `/sage` — Router & Integrator
+
+**"First understand the situation. Then choose the method."**
+
+The entrypoint when the user is overwhelmed or doesn't know which coach to call. It detects the real need, checks safety first, routes to the right coach, and combines multiple coaches when life gets messy.
+
+| Signal | Primary Path |
+|--------|--------------|
+| Emotional intensity, collapse, loss | `/crisis` |
+| Practice, mindfulness, self-understanding | `/spiritual` |
+| Career uncertainty, transition, AI anxiety | `/career` |
+| Product, PMF, founder psychology | `/startup` |
+| Conflict, intimacy, boundaries | `/relationship` |
+| Sleep, energy, stress, habits | `/wellbeing` |
+| Writing, voice, publishing, creative blocks | `/creativity` |
+| Want a wise figure's lens on a life problem | `/wisdom` |
+
+> *For: anyone who knows something is stuck but doesn't yet know which doorway to open*
 
 ### 🧘 `/spiritual` — Spiritual Guide
 
@@ -153,95 +203,153 @@ Covers: 0→1, Product-Market Fit, growth plateaus, pivot decisions, AI startups
 
 ---
 
+### 🫶 `/relationship` — Relationship Coach
+
+**"The point is not to win the argument. The point is to understand what each person is protecting and longing for."**
+
+Helps with conflict, intimacy, attachment patterns, boundaries, repair, breakup grief, and family pressure.
+
+| Mentor | Methodology | Core Wisdom |
+|--------|-------------|-------------|
+| Esther Perel | Desire & intimacy | Relationship needs both connection and separateness |
+| John & Julie Gottman | Relationship research | Repair attempts matter more than perfect agreement |
+| Sue Johnson | Emotionally Focused Therapy | Under conflict is often "are you there for me?" |
+| Marshall Rosenberg | Nonviolent Communication | Translate judgment into feelings, needs, and requests |
+| Harriet Lerner | Boundaries | Change the dance by changing your own steps |
+| bell hooks | Ethics of love | Love is care, respect, responsibility, and knowledge |
+
+**Five-step relationship guidance**: De-escalate → Reveal → Communicate → Boundary → Repair/Release
+
+> *For: couples, singles, family boundary work, breakup recovery, and anyone learning mature love*
+
+---
+
+### 🌿 `/wellbeing` — Wellbeing Coach
+
+**"Restore rhythm before chasing breakthroughs."**
+
+Helps rebuild daily stability through sleep, energy, stress regulation, habits, movement, and sustainable pacing.
+
+| Mentor | Methodology | Core Wisdom |
+|--------|-------------|-------------|
+| Andrew Huberman | Neuroscience protocols | Light, sleep, breath, and movement shape state |
+| Peter Attia | Longevity lens | Long-term health is capacity, not just absence of illness |
+| James Clear | Atomic Habits | Make good habits easy and bad habits hard |
+| Kristin Neff | Self-compassion | Shame is a weak engine for change |
+| Gabor Maté | Stress & authenticity | The body often speaks where the self has been silenced |
+| TCM lifestyle lens | Rhythm & balance | Observe cold/heat, deficiency/excess, food, rest, and season |
+
+**Five-step recovery system**: Stabilize → Rhythm → Energy Audit → Micro Habit → Sustainable System
+
+> *For: overworked founders, creators, students, caregivers, and anyone whose life rhythm has collapsed*
+
+---
+
+### ✍️ `/creativity` — Creativity Coach
+
+**"Don't wait for inspiration. Build a system where true material can surface."**
+
+Helps creators move from vague ideas to publishable work: writing, content, personal voice, creative blocks, and knowledge products.
+
+| Mentor | Methodology | Core Wisdom |
+|--------|-------------|-------------|
+| Julia Cameron | The Artist's Way | Morning pages bypass the inner censor |
+| Steven Pressfield | The War of Art | Resistance appears whenever the work matters |
+| Rick Rubin | Creative listening | Less control, deeper attention |
+| Austin Kleon | Show Your Work | Share the process, not only the polished result |
+| Seth Godin | Smallest viable audience | Serve the people who actually need the work |
+| Natalie Goldberg | Writing practice | Keep the hand moving before judging |
+
+**Five-step creation system**: Unblock → Find the Living Question → Shape → Voice → Publish
+
+> *For: writers, newsletter creators, educators, founders, and anyone trying to turn lived insight into work*
+
+---
+
+### 🧭 `/wisdom` — Wisdom Distillation Coach
+
+**"Wisdom is not an answer bank. It is a way of seeing."**
+
+Distills ancient and modern wise figures into practical lenses for present-life situations. It does not imitate them or paste quotes. It extracts how they see, what they would question, what they would loosen, and what they would ask you to embody.
+
+| Figure | Lens | Useful For |
+|--------|------|------------|
+| Laozi | Wu wei, release over-control | Over-effort, rigidity, forcing outcomes |
+| Zhuangzi | Freedom from fixed identity | Comparison, status anxiety, narrow self-image |
+| Confucius | Maturity inside roles | Family, team, duty, long-term character |
+| Mencius | Moral courage and good sprouts | Integrity conflicts, compromised values |
+| Wang Yangming | Knowing-action unity | Indecision, avoidance, split between values and action |
+| Su Shi | Spacious resilience | Exile, failure, loss, turning pain into depth |
+| Gandhi / Mandela / Martin Luther King Jr. / Havel / Arendt | Nonviolence, reconciliation, public responsibility | Social action, moral courage, organizational ethics |
+| Marcus Aurelius / Epictetus / Seneca | Stoic responsibility and freedom | Control, time, public judgment, pressure |
+| Jung / Fromm / Frankl | Shadow, mature love, meaning | Repeating patterns, intimacy, suffering |
+| Krishnamurti / Simone Weil / Rilke | Direct seeing, attention, living the question | Spiritual dependency, deep listening, creative uncertainty |
+| Drucker / Munger / Buffett / Christensen | Contribution, decisions, ability circle, mission | Management, wealth, product strategy, life priorities |
+| Feynman / Einstein / Meadows / Ostrom / Goodall | First-principles learning, systems, commons, ecology | Learning, complex systems, community, long-term observation |
+| Montessori / Freire / Rogers / Satir / Winnicott | Growth environments, liberation, acceptance, family systems | Education, parenting, therapy, self-development |
+| Sun Tzu / Musashi / Leonardo da Vinci | Strategy, practice, cross-domain observation | Competition, craft, innovation |
+
+**Three modes**: Single-Figure Lens → Three-Person Council → Tension Between Two Wisdoms
+
+> *For: people who want a deeper lens before deciding what to do*
+
+---
+
 ## ⚡ Quick Start
 
 ### Platform Compatibility
 
-| Platform | Install Method | Status |
-|----------|---------------|--------|
-| **Claude Code** | Copy to `.claude/commands/` | ✅ Native support |
-| **OpenClaw 🦞** | Publish to ClawHub / copy to skills folder | ✅ Native support |
-| **Cursor** | Copy to `.cursor/rules/` | ✅ Compatible |
-| **GitHub Copilot** | Copy to `.github/copilot-instructions.md` | ✅ Compatible |
-| **Windsurf** | Copy to `.windsurf/rules/` | ✅ Compatible |
-| **Cline** | Copy to `.cline/rules/` | ✅ Compatible |
-| **Codex** | Copy to `.agents/skills/` | ✅ Compatible |
-| **Gemini CLI** | Copy to `.gemini/skills/` | ✅ Compatible |
+| Platform | Mode | Install / Export |
+|----------|------|------------------|
+| **Claude Code** | Native skill | `.claude/skills/<skill>/SKILL.md` |
+| **OpenAI Codex** | Native skill | `.agents/skills/<skill>/SKILL.md` or `~/.agents/skills/<skill>/SKILL.md` |
+| **OpenClaw 🦞** | Native skill | `skills/sage-<skill>/SKILL.md` or `~/.openclaw/skills/sage-<skill>/SKILL.md` |
+| **Cursor** | Project rule | `.cursor/rules/sage-<skill>.mdc` |
+| **GitHub Copilot** | Prompt file | `.github/prompts/sage-<skill>.prompt.md` |
+| **Windsurf** | Workspace rule | `.windsurf/rules/sage-<skill>.md` |
+| **Cline** | Workspace rule | `.clinerules/sage-<skill>.md` |
+| **Gemini CLI** | `GEMINI.md` imports | `.gemini/sage-coach/<skill>.md` + imports |
+| **ChatGPT / Claude.ai / Gemini Gems / Perplexity / Grok** | Copy-paste prompt export | `bin/sage-coach export <platform> dist` |
 
-### Install for Claude Code
+See the full matrix in **[Platform Guide](docs/platforms.md)**.
 
-```bash
-git clone https://github.com/joyozhang333-lgtm/sage-coach.git
-
-# Project-level (this project only)
-mkdir -p .claude/commands
-cp sage-coach/skills/spiritual/SKILL.md .claude/commands/spiritual.md
-cp sage-coach/skills/crisis/SKILL.md .claude/commands/crisis.md
-cp sage-coach/skills/career/SKILL.md .claude/commands/career.md
-cp sage-coach/skills/startup/SKILL.md .claude/commands/startup.md
-
-# Or global (all projects)
-mkdir -p ~/.claude/commands
-for f in spiritual crisis career startup; do
-  cp sage-coach/skills/$f/SKILL.md ~/.claude/commands/$f.md
-done
-```
-
-Then in Claude Code:
-```
-/spiritual    🧘 Start a spiritual practice dialogue
-/crisis       🫂 Get companionship in hard times
-/career       🔄 Explore career transition
-/startup      🚀 Analyze startup challenges
-```
-
-### Install for OpenClaw 🦞
-
-**Option A: Install from ClawHub (recommended)**
-
-```bash
-openclaw skills install sage-spiritual
-openclaw skills install sage-crisis
-openclaw skills install sage-career
-openclaw skills install sage-startup
-```
-
-**Option B: Manual install**
+### Universal Installer
 
 ```bash
 git clone https://github.com/joyozhang333-lgtm/sage-coach.git
+cd sage-coach
 
-# Copy to OpenClaw skills directory
-cp -r sage-coach/skills/spiritual ~/.openclaw/skills/sage-spiritual
-cp -r sage-coach/skills/crisis ~/.openclaw/skills/sage-crisis
-cp -r sage-coach/skills/career ~/.openclaw/skills/sage-career
-cp -r sage-coach/skills/startup ~/.openclaw/skills/sage-startup
+# Show all coaches
+./bin/sage-coach list
+
+# Install all skills globally for Claude Code
+./bin/sage-coach install claude-code --global all
+
+# Install all skills globally for Codex
+./bin/sage-coach install codex --global all
+
+# Install into a project for Cursor / Windsurf / Cline / Copilot
+./bin/sage-coach install cursor --target /path/to/your-project all
+./bin/sage-coach install windsurf --target /path/to/your-project all
+./bin/sage-coach install cline --target /path/to/your-project all
+./bin/sage-coach install copilot --target /path/to/your-project all
+
+# Export copy-paste prompts for ChatGPT, Claude.ai, Gemini Gems, Perplexity, Grok
+./bin/sage-coach export all dist
 ```
 
-Then talk to your 🦞:
+### Commands / Skills
+
 ```
-@sage-spiritual    🧘 Spiritual guidance
-@sage-crisis       🫂 Crisis companion
-@sage-career       🔄 Career transition
-@sage-startup      🚀 Startup mentoring
-```
-
-### Install for Cursor / Copilot / Other Tools
-
-Each SKILL.md can be used as a system prompt or rules file in any AI tool:
-
-```bash
-# Cursor
-cp sage-coach/skills/spiritual/SKILL.md .cursor/rules/spiritual.md
-
-# Copilot — append to instructions
-cat sage-coach/skills/crisis/SKILL.md >> .github/copilot-instructions.md
-
-# Windsurf
-cp sage-coach/skills/career/SKILL.md .windsurf/rules/career.md
-
-# Codex / Gemini CLI
-cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
+/sage          🪔 Route to the right coach
+/spiritual     🧘 Start a spiritual practice dialogue
+/crisis        🫂 Get companionship in hard times
+/career        🔄 Explore career transition
+/startup       🚀 Analyze startup challenges
+/relationship  🫶 Work through intimacy, conflict, and boundaries
+/wellbeing     🌿 Rebuild sleep, energy, habits, and rhythm
+/creativity    ✍️ Unblock writing, voice, and publishing
+/wisdom        🧭 Distill wise figures into a lens for your situation
 ```
 
 ---
@@ -256,7 +364,7 @@ cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
 | **Customize** | Can't modify | Fork & edit — add mentors, add scenarios |
 | **Capability** | Limited by wrapper design | Full LLM capability |
 | **Size** | Tens of MB | 3-5 KB each |
-| **Works on** | One platform | Claude Code, OpenClaw, Cursor, Copilot, and more |
+| **Works on** | One platform | Claude Code, Codex, OpenClaw, Cursor, Copilot, Windsurf, Cline, Gemini CLI, and prompt-based AI products |
 
 **Core insight**: A Skill isn't an API call — it's **cognitive injection**. You're giving a world-class AI a professional thinking framework. More powerful than any wrapper. And your conversations never touch a third-party server.
 
@@ -280,7 +388,7 @@ Every coach has safety mechanisms — crisis referral, professional advice limit
 Eastern wisdom (Buddhism, Heart-Mind Philosophy, Zen) woven with Western methodologies (existentialism, design thinking, lean startup). Deeply optimized for Chinese users. Naturally supports English conversation.
 
 **6. Universal compatibility.**
-Built on the SKILL.md standard — works natively on Claude Code and OpenClaw, and is compatible with every major AI coding tool.
+Built around portable `SKILL.md` instructions, plus adapters for native skills, project rules, instruction files, `GEMINI.md` imports, and copy-paste system prompts.
 
 ---
 
@@ -289,7 +397,7 @@ Built on the SKILL.md standard — works natively on Claude Code and OpenClaw, a
 Sage Coach is an open project. Welcome to:
 
 - **Add mentor personas** — who inspires you most? Add them
-- **Create new coaches** — relationships? parenting? health? creativity?
+- **Create new coaches** — parenting? finance mindset? leadership? learning?
 - **Translate** — Japanese, Korean, Spanish, any language
 - **Improve frameworks** — make each stage more precise
 - **Publish to ClawHub** — help OpenClaw users discover Sage Coach
@@ -302,6 +410,7 @@ Submit an Issue or Pull Request.
 ## 📚 Docs
 
 - **[Technical Docs & Geek Guide](docs/geek.md)** — architecture, extension guide, build your own coach
+- **[Platform Guide](docs/platforms.md)** — install/export matrix for major AI products
 - **[Promotional Materials 宣传素材](docs/promo.md)** — tech community copy, social media templates
 
 ---
@@ -325,6 +434,28 @@ If Sage Coach helped you, give it a ⭐️ so more people can find it.
 ---
 
 <br>
+
+## Sage Coach 是什么
+
+Sage Coach 是一个**跨平台 AI Coach Skill 开源库**。它不是一个新的聊天 App，而是一组可以被主流 AI 产品直接加载的 Markdown 指令包，让 Claude Code、OpenAI Codex、Cursor、GitHub Copilot、Windsurf、Cline、Gemini CLI、ChatGPT、Claude.ai、Gemini Gems、Perplexity 和 Grok 获得可复用的人生教练能力。
+
+适合搜索这些关键词的人：
+
+- AI 人生教练、AI 职业教练、AI 创业导师、AI 亲密关系教练、AI 创作教练、AI 身心节律教练
+- Claude Code Skills、OpenAI Codex Skills、Cursor Rules、GitHub Copilot Prompts、Gemini CLI Prompts
+- ChatGPT 系统提示词、Claude 项目指令、Gemini Gem 指令、Perplexity Spaces Prompt
+- 开源 Prompt Engineering、AI Agent Skills、自我成长工具、低谷陪伴 Prompt、智慧人物蒸馏
+
+一条命令即可安装或导出：
+
+```bash
+./bin/sage-coach install claude-code --global all
+./bin/sage-coach install codex --global all
+./bin/sage-coach install cursor --target /path/to/repo all
+./bin/sage-coach export all dist
+```
+
+---
 
 ## 故事
 
@@ -350,13 +481,34 @@ If Sage Coach helped you, give it a ⭐️ so more people can find it.
 
 **Sage Coach**，就是为了改变这件事。
 
-4 盏灯，4 个维度，每一盏融合了 6-10 位世界级导师的方法论。不是拼凑语录，是完整的认知架构。不是聊天机器人，是真正的引导系统。
+9 个 Skill，8 个生活维度，再加一个 `/sage` 总入口帮你判断应该先走哪条路径。每个 Coach 都融合世界级导师的方法论。不是拼凑语录，是完整的认知架构。不是聊天机器人，是真正的引导系统。
 
 **这盏灯，给所有在黑暗中找路的人。**
 
 ---
 
-## 🪔 四盏灯
+## 🪔 Sage Coach 套件
+
+### 🪔 `/sage` — 总入口
+
+**"先识别处境，再选择方法。"**
+
+当用户说不清自己到底卡在哪里时，`/sage` 会先做安全扫描，再判断该进入哪一个 Coach；如果问题横跨多个维度，它负责排序和整合。
+
+| 信号 | 建议主线 |
+|------|----------|
+| 情绪崩溃、失去、失败 | `/crisis` |
+| 修行、正念、自我理解 | `/spiritual` |
+| 职业迷茫、转型、AI 焦虑 | `/career` |
+| 产品、PMF、创始人心理 | `/startup` |
+| 冲突、亲密、边界 | `/relationship` |
+| 睡眠、精力、压力、习惯 | `/wellbeing` |
+| 写作、声音、发布、创作阻塞 | `/creativity` |
+| 想借某位智者的视角看问题 | `/wisdom` |
+
+> *适合：知道自己卡住了，但还不知道该先从哪里开始的人*
+
+---
 
 ### 🧘 `/spiritual` — 灵性上师
 
@@ -450,94 +602,153 @@ If Sage Coach helped you, give it a ⭐️ so more people can find it.
 
 ---
 
+### 🫶 `/relationship` — 亲密关系
+
+**"关系不是赢过对方，而是看见彼此在保护什么、渴望什么。"**
+
+处理冲突、亲密、依恋、边界、修复、分手哀悼、家庭压力等关系议题。
+
+| 导师 | 方法论 | 核心智慧 |
+|------|--------|---------|
+| Esther Perel | 亲密与欲望 | 关系需要连接，也需要独立空间 |
+| John & Julie Gottman | 关系研究 | 修复尝试比完美一致更重要 |
+| Sue Johnson | 情绪取向伴侣治疗 | 冲突底层常是"你还在吗？我重要吗？" |
+| Marshall Rosenberg | 非暴力沟通 | 把评判翻译成感受、需要和请求 |
+| Harriet Lerner | 边界 | 改变关系舞步，从改变自己的站位开始 |
+| bell hooks | 爱的伦理 | 爱是关心、责任、尊重、了解和承诺 |
+
+**五步关系引导**：降温 → 看见需求 → 表达倾听 → 边界协议 → 修复/告别
+
+> *适合：情侣、夫妻、单身者、分手恢复、家庭边界，以及想学习成熟相爱的人*
+
+---
+
+### 🌿 `/wellbeing` — 身心节律
+
+**"先恢复节律，再追求突破。"**
+
+帮助用户在睡眠、精力、压力、习惯、身体紧绷和长期透支中重建基本秩序。
+
+| 导师 | 方法论 | 核心智慧 |
+|------|--------|---------|
+| Andrew Huberman | 神经科学调节 | 光照、睡眠、呼吸、运动改变状态 |
+| Peter Attia | 长寿医学视角 | 健康是长期能力，而不只是没病 |
+| James Clear | 习惯系统 | 让好习惯容易发生，让坏习惯更难发生 |
+| Kristin Neff | 自我慈悲 | 羞辱自己不是稳定的改变动力 |
+| Gabor Maté | 压力与真实需求 | 身体常替被压抑的自我说话 |
+| 中医生活观 | 顺时与平衡 | 观察寒热虚实、饮食起居和季节节律 |
+
+**五步恢复系统**：止损 → 节律 → 能量审计 → 微习惯 → 长期系统
+
+> *适合：高压工作者、创业者、创作者、学生、照护者，以及生活节律已经崩掉的人*
+
+---
+
+### ✍️ `/creativity` — 创作表达
+
+**"创作不是等灵感来，而是建立一个让真东西持续浮现的系统。"**
+
+帮助创作者从模糊想法走到可发布作品：写作、内容、个人声音、创作阻塞、知识产品。
+
+| 导师 | 方法论 | 核心智慧 |
+|------|--------|---------|
+| Julia Cameron | 艺术家之路 | 晨间书写绕过内在审判者 |
+| Steven Pressfield | 艺术之战 | 阻力总在重要作品前出现 |
+| Rick Rubin | 创作聆听 | 少一点控制，多一点接收 |
+| Austin Kleon | 展示你的工作 | 公开过程，而不只展示成品 |
+| Seth Godin | 最小可行受众 | 服务真正需要你作品的人 |
+| Natalie Goldberg | 写作练习 | 先持续写，再判断好坏 |
+
+**五步创作系统**：清理阻塞 → 找到真问题 → 形成结构 → 建立声音 → 发布系统
+
+> *适合：写作者、公众号/小红书/Newsletter 创作者、教育者、产品人，以及想把真实洞察变成作品的人*
+
+---
+
+### 🧭 `/wisdom` — 智慧人物蒸馏
+
+**"智慧不是答案库，而是一种看见问题的方式。"**
+
+从古今有智慧的人物中提炼可用于当下处境的认知镜片。它不扮演历史人物，也不堆名言，而是提炼这个人会看见什么、追问什么、放下什么、坚持什么。
+
+| 人物 | 镜片 | 适合场景 |
+|------|------|----------|
+| 老子 | 无为、反控制 | 过度用力、越努力越僵 |
+| 庄子 | 逍遥、身份松绑 | 比较、成败焦虑、单一身份困住 |
+| 孔子 | 修身、关系中的成熟 | 家庭、团队、责任、长期人格 |
+| 孟子 | 善端、浩然之气 | 良知冲突、价值妥协、道德勇气 |
+| 王阳明 | 致良知、知行合一 | 犹豫、拖延、价值与行动分裂 |
+| 苏轼 | 旷达、生命弹性 | 失败、失去、人生不如意 |
+| 甘地 / 曼德拉 / 马丁·路德·金 / 哈维尔 / 阿伦特 | 非暴力、和解、公共责任 | 社会行动、道德勇气、组织伦理 |
+| Marcus / Epictetus / Seneca | 斯多葛责任与自由 | 可控/不可控、时间、评价、压力 |
+| Jung / Fromm / Frankl | 阴影、成熟的爱、意义 | 反复模式、亲密关系、苦难 |
+| Krishnamurti / Simone Weil / Rilke | 直接看见、注意力、活出问题 | 精神依赖、深度倾听、创作不确定 |
+| Drucker / Munger / Buffett / Christensen | 贡献、决策、能力圈、使命 | 管理、财富、产品战略、人生优先级 |
+| Feynman / Einstein / Meadows / Ostrom / Goodall | 第一性学习、系统、共同体、生态 | 学习、复杂系统、社群、长期观察 |
+| Montessori / Freire / Rogers / Satir / Winnicott | 成长环境、解放教育、接纳、家庭系统 | 教育、育儿、咨询、自我发展 |
+| 孙子 / Musashi / Leonardo da Vinci | 战略、技艺、跨界观察 | 竞争、长期练习、创新 |
+
+**三种用法**：单人物镜片 → 三人圆桌 → 两种智慧的辩证校正
+
+> *适合：想在行动之前，先借一个更深视角照见自己处境的人*
+
+---
+
 ## ⚡ 快速开始
 
 ### 平台兼容性
 
-| 平台 | 安装方式 | 状态 |
-|------|---------|------|
-| **Claude Code** | 复制到 `.claude/commands/` | ✅ 原生支持 |
-| **OpenClaw 🦞** | 发布到 ClawHub / 复制到 skills 目录 | ✅ 原生支持 |
-| **Cursor** | 复制到 `.cursor/rules/` | ✅ 兼容 |
-| **GitHub Copilot** | 复制到 `.github/copilot-instructions.md` | ✅ 兼容 |
-| **Windsurf** | 复制到 `.windsurf/rules/` | ✅ 兼容 |
-| **Cline** | 复制到 `.cline/rules/` | ✅ 兼容 |
-| **Codex** | 复制到 `.agents/skills/` | ✅ 兼容 |
-| **Gemini CLI** | 复制到 `.gemini/skills/` | ✅ 兼容 |
+| 平台 | 模式 | 安装 / 导出 |
+|------|------|-------------|
+| **Claude Code** | 原生 Skill | `.claude/skills/<skill>/SKILL.md` |
+| **OpenAI Codex** | 原生 Skill | `.agents/skills/<skill>/SKILL.md` 或 `~/.agents/skills/<skill>/SKILL.md` |
+| **OpenClaw 🦞** | 原生 Skill | `skills/sage-<skill>/SKILL.md` 或 `~/.openclaw/skills/sage-<skill>/SKILL.md` |
+| **Cursor** | Project Rule | `.cursor/rules/sage-<skill>.mdc` |
+| **GitHub Copilot** | Prompt File | `.github/prompts/sage-<skill>.prompt.md` |
+| **Windsurf** | Workspace Rule | `.windsurf/rules/sage-<skill>.md` |
+| **Cline** | Workspace Rule | `.clinerules/sage-<skill>.md` |
+| **Gemini CLI** | `GEMINI.md` imports | `.gemini/sage-coach/<skill>.md` + imports |
+| **ChatGPT / Claude.ai / Gemini Gems / Perplexity / Grok** | 可复制 Prompt 导出 | `bin/sage-coach export <platform> dist` |
 
-### Claude Code 安装
+完整说明见 **[平台指南](docs/platforms.md)**。
 
-```bash
-git clone https://github.com/joyozhang333-lgtm/sage-coach.git
-
-# 项目级（仅当前项目可用）
-mkdir -p .claude/commands
-cp sage-coach/skills/spiritual/SKILL.md .claude/commands/spiritual.md
-cp sage-coach/skills/crisis/SKILL.md .claude/commands/crisis.md
-cp sage-coach/skills/career/SKILL.md .claude/commands/career.md
-cp sage-coach/skills/startup/SKILL.md .claude/commands/startup.md
-
-# 或全局安装（所有项目可用）
-mkdir -p ~/.claude/commands
-for f in spiritual crisis career startup; do
-  cp sage-coach/skills/$f/SKILL.md ~/.claude/commands/$f.md
-done
-```
-
-然后在 Claude Code 中输入：
-```
-/spiritual    🧘 开始灵性修行对话
-/crisis       🫂 在低谷时刻获得陪伴
-/career       🔄 探索职业转型
-/startup      🚀 分析创业问题
-```
-
-### OpenClaw 小龙虾 🦞 安装
-
-**方式一：从 ClawHub 安装（推荐）**
-
-```bash
-openclaw skills install sage-spiritual
-openclaw skills install sage-crisis
-openclaw skills install sage-career
-openclaw skills install sage-startup
-```
-
-**方式二：手动安装**
+### 通用安装器
 
 ```bash
 git clone https://github.com/joyozhang333-lgtm/sage-coach.git
+cd sage-coach
 
-cp -r sage-coach/skills/spiritual ~/.openclaw/skills/sage-spiritual
-cp -r sage-coach/skills/crisis ~/.openclaw/skills/sage-crisis
-cp -r sage-coach/skills/career ~/.openclaw/skills/sage-career
-cp -r sage-coach/skills/startup ~/.openclaw/skills/sage-startup
+# 查看全部 Skill
+./bin/sage-coach list
+
+# 全局安装到 Claude Code
+./bin/sage-coach install claude-code --global all
+
+# 全局安装到 Codex
+./bin/sage-coach install codex --global all
+
+# 安装到某个项目的 Cursor / Windsurf / Cline / Copilot
+./bin/sage-coach install cursor --target /path/to/your-project all
+./bin/sage-coach install windsurf --target /path/to/your-project all
+./bin/sage-coach install cline --target /path/to/your-project all
+./bin/sage-coach install copilot --target /path/to/your-project all
+
+# 导出 ChatGPT、Claude.ai、Gemini Gems、Perplexity、Grok 可粘贴 Prompt
+./bin/sage-coach export all dist
 ```
 
-然后和你的 🦞 对话：
+### 命令 / Skill
+
 ```
-@sage-spiritual    🧘 灵性修行引导
-@sage-crisis       🫂 低谷时刻陪伴
-@sage-career       🔄 职业转型规划
-@sage-startup      🚀 创业问题分析
-```
-
-### Cursor / Copilot / 其他工具安装
-
-每个 SKILL.md 都可以作为 system prompt 或规则文件用在任何 AI 工具中：
-
-```bash
-# Cursor
-cp sage-coach/skills/spiritual/SKILL.md .cursor/rules/spiritual.md
-
-# Copilot — 追加到指令文件
-cat sage-coach/skills/crisis/SKILL.md >> .github/copilot-instructions.md
-
-# Windsurf
-cp sage-coach/skills/career/SKILL.md .windsurf/rules/career.md
-
-# Codex / Gemini CLI
-cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
+/sage          🪔 判断该用哪个 Coach
+/spiritual     🧘 灵性修行引导
+/crisis        🫂 低谷时刻陪伴
+/career        🔄 职业转型规划
+/startup       🚀 创业问题分析
+/relationship  🫶 亲密关系、冲突与边界
+/wellbeing     🌿 睡眠、精力、压力与习惯
+/creativity    ✍️ 写作、表达与发布系统
+/wisdom        🧭 智慧人物蒸馏与处境镜片
 ```
 
 ---
@@ -552,7 +763,7 @@ cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
 | **定制** | 不可改 | Fork 即改，加导师加场景 |
 | **能力** | 受限于 wrapper 设计 | LLM 完整能力 |
 | **文件大小** | 动辄几十 MB | 每个 3-5 KB |
-| **平台** | 只能用一个 | Claude Code、OpenClaw、Cursor、Copilot 等全兼容 |
+| **平台** | 只能用一个 | Claude Code、Codex、OpenClaw、Cursor、Copilot、Windsurf、Cline、Gemini CLI 和 Prompt 型 AI 产品 |
 
 **核心洞察**：Skill 不是调 API，是**认知注入** — 给世界级 AI 注入专业思维框架。比任何 wrapper 都强大。而且你的对话永远不过第三方服务器。
 
@@ -576,7 +787,7 @@ cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
 融合东方智慧（佛法、心学、禅宗）和西方方法论（存在主义、设计思维、精益创业）。为中文用户深度优化，同时天然支持英文对话。
 
 **6. 全平台兼容。**
-基于 SKILL.md 标准格式 — Claude Code 和 OpenClaw 原生支持，兼容所有主流 AI 编程工具。
+围绕可迁移的 `SKILL.md` 指令构建，并提供原生 Skill、项目规则、Instruction 文件、`GEMINI.md` import 和复制粘贴 Prompt 等适配层。
 
 ---
 
@@ -585,7 +796,7 @@ cp sage-coach/skills/startup/SKILL.md .agents/skills/startup.md
 Sage Coach 是一个开放的项目。欢迎：
 
 - **添加导师原型** — 你最受启发的老师是谁？加进来
-- **新增 Coach 方向** — 亲密关系？育儿？健康？创作？
+- **新增 Coach 方向** — 育儿？财富心智？领导力？学习？
 - **多语言翻译** — 日文、韩文、西班牙文...
 - **改进引导框架** — 让每个阶段更精准
 - **发布到 ClawHub** — 帮助 OpenClaw 用户发现 Sage Coach
@@ -598,6 +809,7 @@ Sage Coach 是一个开放的项目。欢迎：
 ## 📚 文档
 
 - **[技术文档 & 极客指南](docs/geek.md)** — 架构设计、扩展方法、创建你自己的 Coach
+- **[平台指南](docs/platforms.md)** — 主流 AI 产品安装/导出矩阵
 - **[宣传素材](docs/promo.md)** — 极客文、小红书文、英文推广素材
 
 ---
@@ -629,7 +841,7 @@ Sage Coach 是一个开放的项目。欢迎：
   <br><br>
   MIT License — Free forever.
   <br><br>
-  Works on: Claude Code · OpenClaw 🦞 · Cursor · Copilot · Windsurf · Cline · Codex · Gemini CLI
+  Works on: Claude Code · Codex · OpenClaw 🦞 · Cursor · Copilot · Windsurf · Cline · Gemini CLI · ChatGPT exports
   <br><br>
   Built with ❤️ by <a href="https://github.com/joyozhang333-lgtm">归处 Here</a>
 </p>

@@ -1,4 +1,5 @@
 ---
+name: spiritual
 description: "灵性上师 AI Coach — 修行引导、佛法见地、明心见性"
 allowed-tools: Read, WebSearch, WebFetch
 ---
